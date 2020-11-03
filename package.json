@@ -1,0 +1,23 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horlabyc/ReactFEM.git"
+  },
+  "author": "Sulaiman Olaosebikan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horlabyc/ReactFEM/issues"
+  },
+  "homepage": "https://github.com/horlabyc/ReactFEM#readme",
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}
