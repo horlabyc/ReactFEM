@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const useDropdown = (label, defaultState, options) => {
   const [state, setState] = useState(defaultState);
   const id = `use-dropdown-${label.replace(" ", "").toLowerCase()}`;
-  
+
   const DropDown = () => (
     <label htmlFor={label}>
       {label}
@@ -21,7 +21,7 @@ const useDropdown = (label, defaultState, options) => {
       </select>
     </label>
   );
-  return [state, DropDown];
+  return [state, DropDown, setState];
 };
 
 export default useDropdown;
