@@ -6,17 +6,19 @@ import Details from './details';
 
 const App = () => {
   return (
-    <div>
-      <header>
-        <Link to="/">
-          Adopt me!
-        </Link>
-      </header>
-      <Router>
-        <SearchParams path="/" />
-        <Details path="/details/:id" />
-      </Router>
-    </div>
+    <React.StrictMode>
+      <div>
+        <header>
+          <Link to="/">
+            Adopt me!
+          </Link>
+        </header>
+        <Router>
+          <SearchParams path="/" />
+          <Details path="/details/:id" />
+        </Router>
+      </div>
+    </React.StrictMode>
   );
 };
 render(<App />, document.getElementById("root"));
