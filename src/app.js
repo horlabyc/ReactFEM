@@ -11,15 +11,15 @@ const App = () => {
     React.createElement("h1", {}, "Adopt Me!"),
     React.createElement(Pet, { name: "Major", animal: "Dog", breed: "Rot" }),
     React.createElement(Pet, {
-      name: "Luna",
-      animal: "Goat",
-      breed: "Sokoto-gudali",
+        name: "Luna",
+        animal: "Goat",
+        breed: "Sokoto-gudali",
     }),
     React.createElement(Pet, {
-      name: "Tim",
-      animal: "Rabbit",
-      breed: "Blan-de-hoto",
-    }),
-  ]);
+        name: "Tim",
+        animal: "Rabbit",
+        breed: "Blan-de-hoto",
+    }), 
+    ]);
 };
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
