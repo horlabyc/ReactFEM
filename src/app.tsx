@@ -1,9 +1,9 @@
 import React, { useState, lazy, Suspense } from "react";
 import { render } from "react-dom";
-import { Router } from '@reach/router';
+import { Link, Router } from '@reach/router';
 import ThemeContext from './context/themeContext';
 import SearchParams from "./searchparams";
-import NavBar from './navbar';
+// import NavBar from './navbar';
 
 const Details = lazy(() => import('./details'));
 
@@ -14,7 +14,10 @@ const App = () => {
     <React.StrictMode>
       <ThemeContext.Provider value={themeHook}>
         <div>
-          <NavBar />
+          {/* <NavBar /> */}
+          <header>
+            <Link to="'/">Adopt me</Link>
+          </header>
           <Suspense fallback={<h1>loading route...</h1>}>
             <Router>
               <SearchParams path="/" />
